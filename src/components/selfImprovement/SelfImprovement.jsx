@@ -28,7 +28,7 @@ const data = [
 
 const SelfImprovement = () => {
   return (
-    <div className="pl-80 mr-auto w-full h-[90vh] mt-20 mb-20">
+    <div className="pl-80 mr-auto w-full h-[90vh] mt-20">
       <p className="text-xl font-normal">
         Wrong with self-improvement & how we&apos;re fixing it.
       </p>

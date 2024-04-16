@@ -13,10 +13,11 @@ function App() {
       <br />
       <img className="w-11/12 ml-auto mr-auto" src={HomePageImg} alt="" />
       <br />
-      <EQSection />
+      <EQSection content={"first"} />
       <Cards />
       <MeetTheAheadApp />
       <SelfImprovement />
+      <EQSection content={"second"} />
     </div>
   );
 }
