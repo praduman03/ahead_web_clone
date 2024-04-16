@@ -6,6 +6,9 @@ import Cards from "./components/carousel/Cards";
 import MeetTheAheadApp from "./components/meetTheAheadApp/meetTheAheadApp";
 import SelfImprovement from "./components/selfImprovement/SelfImprovement";
 import EverWonderedCard from "./components/everWonderedCard/EverWonderedCard";
+import StartTest from "./components/startATest/StartTest";
+import Footer from "./components/footer/Footer";
+import Vacancies from "./components/vacancy/Vacancies";
 
 function App() {
   return (
@@ -19,7 +22,10 @@ function App() {
       <MeetTheAheadApp />
       <SelfImprovement />
       <EQSection content={"second"} />
-      <EverWonderedCard/>
+      <EverWonderedCard />
+      <StartTest />
+      <Vacancies />
+      <Footer />
     </div>
   );
 }
