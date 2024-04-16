@@ -2,6 +2,8 @@
 # Spur.fit Task 
 made by - Praduman Singh Kachhwaha
 
+website demo [link](https://spur-fit-assessment.netlify.app/)
+
 This project is for task of Spur.fit developed using React, Vite, Framer Motion, and Tailwind CSS.
 
 ## Technologies Used
