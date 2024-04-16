@@ -3,6 +3,7 @@ import Navbar from "./components/navbar/Navbar";
 import HomePageImg from "./assets/home_page_image.png";
 import EQSection from "./components/eqSsection/EQSection";
 import Cards from "./components/carousel/Cards";
+import MeetTheAheadApp from "./components/meetTheAheadApp/meetTheAheadApp";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <br />
       <EQSection />
       <Cards />
+      <MeetTheAheadApp />
     </div>
   );
 }
