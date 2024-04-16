@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 const data = [
   {
     title: "It's not easy as 1-2-3",
@@ -29,11 +31,22 @@ const data = [
 const SelfImprovement = () => {
   return (
     <div className="pl-80 mr-auto w-full h-[90vh] mt-20">
-      <p className="text-xl font-normal">
-        Wrong with self-improvement & how we&apos;re fixing it.
-      </p>
-      <br />
-      <h1 className="text-5xl font-medium">Self-improvement. Ugh.</h1>
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        transition={{ duration: 1.9, type: "spring", bounce: "0.1" }}
+        variants={{
+          visible: { opacity: 1, scale: 1, y: 0, x: 0 },
+          hidden: { opacity: 0, scale: 0, x: "-50%" },
+        }}
+      >
+        <p className="text-xl font-normal">
+          Wrong with self-improvement & how we&apos;re fixing it.
+        </p>
+        <br />
+        <h1 className="text-5xl font-medium">Self-improvement. Ugh.</h1>
+      </motion.div>
       <br />
       <br />
       <div className="timeline px-20 pt-14 h-[60vh] overflow-y-scroll scrollbar-hide">
@@ -41,13 +54,24 @@ const SelfImprovement = () => {
           {data.map((data, index) => {
             return (
               <div key={index}>
-                <div className=" max-w-[40rem] relative align-top pl-8">
-                  <div style={{ left: "-12px" }} className="absolute">
-                    🟣
+                <motion.div
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: true }}
+                  transition={{ duration: 1.9, type: "spring", bounce: "0.1" }}
+                  variants={{
+                    visible: { opacity: 1, scale: 1, y: 0, x: 0 },
+                    hidden: { opacity: 0, scale: 0, x: "-50%" },
+                  }}
+                >
+                  <div className=" max-w-[40rem] relative align-top pl-8">
+                    <div style={{ left: "-12px" }} className="absolute">
+                      🟣
+                    </div>
+                    <p className="text-2xl font-medium">{data.title}</p>
+                    <p className="mt-3 text-xl">{data.description}</p>
                   </div>
-                  <p className="text-2xl font-medium">{data.title}</p>
-                  <p className="mt-3 text-xl">{data.description}</p>
-                </div>
+                </motion.div>
               </div>
             );
           })}

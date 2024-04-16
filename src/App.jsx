@@ -5,6 +5,7 @@ import EQSection from "./components/eqSsection/EQSection";
 import Cards from "./components/carousel/Cards";
 import MeetTheAheadApp from "./components/meetTheAheadApp/meetTheAheadApp";
 import SelfImprovement from "./components/selfImprovement/SelfImprovement";
+import EverWonderedCard from "./components/everWonderedCard/EverWonderedCard";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <MeetTheAheadApp />
       <SelfImprovement />
       <EQSection content={"second"} />
+      <EverWonderedCard/>
     </div>
   );
 }
