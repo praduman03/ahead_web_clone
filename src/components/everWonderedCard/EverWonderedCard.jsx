@@ -32,7 +32,7 @@ const EverWonderedCard = () => {
           border: "1px dashed #e7c47e",
           width: "55%",
           position: "absolute",
-          top: "464vh",
+          top: "435vh",
         }}
       ></div>
       <motion.div
