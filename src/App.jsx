@@ -1,12 +1,12 @@
-import './App.css'
+import "./App.css";
+import Navbar from "./components/navbar/Navbar";
 
 function App() {
-
   return (
-    <div className='bg-slate-600'>
-      hello
+    <div>
+      <Navbar />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
