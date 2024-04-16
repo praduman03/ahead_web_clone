@@ -1,6 +1,5 @@
 import "./App.css";
 import Navbar from "./components/navbar/Navbar";
-import HomePageImg from "./assets/home_page_image.png";
 import EQSection from "./components/eqSsection/EQSection";
 import Cards from "./components/carousel/Cards";
 import MeetTheAheadApp from "./components/meetTheAheadApp/meetTheAheadApp";
@@ -9,13 +8,14 @@ import EverWonderedCard from "./components/everWonderedCard/EverWonderedCard";
 import StartTest from "./components/startATest/StartTest";
 import Footer from "./components/footer/Footer";
 import Vacancies from "./components/vacancy/Vacancies";
+import MasterLife from "./components/masterLife/MasterLife";
 
 function App() {
   return (
     <div className="">
       <Navbar />
       <br />
-      <img className="w-11/12 ml-auto mr-auto" src={HomePageImg} alt="" />
+      <MasterLife />
       <br />
       <EQSection content={"first"} />
       <Cards />
