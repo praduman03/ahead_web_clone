@@ -4,6 +4,7 @@ import HomePageImg from "./assets/home_page_image.png";
 import EQSection from "./components/eqSsection/EQSection";
 import Cards from "./components/carousel/Cards";
 import MeetTheAheadApp from "./components/meetTheAheadApp/meetTheAheadApp";
+import SelfImprovement from "./components/selfImprovement/SelfImprovement";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <EQSection />
       <Cards />
       <MeetTheAheadApp />
+      <SelfImprovement />
     </div>
   );
 }
