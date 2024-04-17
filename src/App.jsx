@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import "./App.css";
 import Navbar from "./components/navbar/Navbar";
 import EQSection from "./components/eqSsection/EQSection";
@@ -10,7 +11,7 @@ import Footer from "./components/footer/Footer";
 import Vacancies from "./components/vacancy/Vacancies";
 import MasterLife from "./components/masterLife/MasterLife";
 
-function App() {
+function App({ isAdmin }) {
   return (
     <div className="">
       <Navbar />
@@ -24,7 +25,7 @@ function App() {
       <EQSection content={"second"} />
       <EverWonderedCard />
       <StartTest />
-      <Vacancies />
+      <Vacancies isAdmin={isAdmin} />
       <Footer />
     </div>
   );

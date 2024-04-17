@@ -2,8 +2,16 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 
-const VacancyCard = ({ data, index }) => {
+const VacancyCard = ({ data, index, isAdmin, deleteVac, editVac }) => {
   const [isButtonVisible, setButtonVisible] = useState(false);
+
+  const deleteData = () => {
+    deleteVac(data.id);
+  };
+
+  const editData = () => {
+    editVac(data.id);
+  }
   return (
     <>
       <motion.div
@@ -27,6 +35,7 @@ const VacancyCard = ({ data, index }) => {
           </ul>
         </div>
         {isButtonVisible && (
+          <>
           <motion.button
             initial="hidden"
             whileInView="visible"
@@ -39,6 +48,13 @@ const VacancyCard = ({ data, index }) => {
           >
             Click Me
           </motion.button>
+            {isAdmin && (
+              <>
+                <button className="mx-10 cursor-pointer text-white bg-red-600 rounded-full px-3 py-2 mt-4" onClick={deleteData}>Delete</button>
+                <button className="mx-10 cursor-pointer text-white bg-green-600 rounded-full px-3 py-2 mt-4" onClick={editData}>Edit</button>
+              </>
+            )}
+            </>
         )}
       </motion.div>
     </>
